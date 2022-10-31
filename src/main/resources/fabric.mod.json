@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "pwtd",
+  "version": "${version}",
+
+  "name": "Posion When Taken Damage",
+  "description": "As the title says, you get poison when u taken any type of damage. This is mainly use for challenge runs.",
+  "authors": [
+    "The Changer"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "GPL-3.0 License",
+  "icon": "assets/pwtd/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.the_changer.pwtd.pwtdMod"
+    ]
+  },
+  "mixins": [
+    "pwtd.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
